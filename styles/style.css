@@ -101,7 +101,7 @@ main h2 {
 .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
     margin-top: 30px;
     gap: 24px;
 }
@@ -112,7 +112,12 @@ main h2 {
     border-radius: 16px;
     border: 1px solid rgba(14, 14, 14, 0.15);
 }
-
+.pillars .card {
+    max-width: 250px;
+}
+.pillars .card img {
+    width: 64px;
+}
 .card img {
     margin-bottom: 20px;
 }
@@ -142,11 +147,10 @@ main h2 {
     color: #1E1E1E;
 }
 
-.left-card,
-.middle-card,
-.right-card {
+.future .card {
     border: 0;
     padding: 30px;
+    max-width: 330px;
 }
 
 .left-card {
@@ -171,6 +175,10 @@ main h2 {
 
 .right-card button {
     background-color: #FFC239;
+}
+
+.future img{
+    width: 80px;
 }
 
 .quota {
@@ -261,6 +269,7 @@ select {
 .news-content img {
     display: block;
     margin-bottom: 10px;
+    width: 100px;
 }
 
 .news-content i {
@@ -383,6 +392,7 @@ select {
 }
 footer{
     text-align: center;
+    margin-top: 60px;
 }
 footer h2 {
     font-size: 32px;
