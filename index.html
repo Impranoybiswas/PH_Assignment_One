@@ -11,6 +11,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" type="image/x-icon" href=".//assets/logo.png" />
     <title>Bangladesh 2.0</title>
   </head>
   <!--First Assignment by Pranoy Biswas For PH-->
@@ -69,7 +70,7 @@
           </div>
         </div>
       </div>
-      <div style="display:none">
+
       <!--The Vision of Future-->
       <div class="section">
         <h2>The Vision of Future</h2>
@@ -110,6 +111,7 @@
           </div>
         </div>
       </div>
+
       <!--Chief Adviser Quota-->
       <div class="section">
         <div class="card quota">
@@ -133,11 +135,12 @@
           <i>Chief Adviser of the People's Republic of Bangladesh</i>
         </div>
       </div>
+
       <!--Your Opinion Matters-->
       <div class="section">
         <h2>Your Opinion Matters</h2>
         <div class="card question-card">
-          <table>
+          <table class="table_desktop">
             <tr>
               <th class="ques-head" colspan="2">
                 <div><span>Question</span><span>Select Your Opinion</span></div>
@@ -185,10 +188,61 @@
               </th>
             </tr>
           </table>
+          <table class="table_mobile">
+            <tr>
+              <th style="text-align: left">
+                Do you believe Bangladesh is on the right path toward becoming a
+                developed nation?
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <div class="answer">
+                  <select name="options" id="options">
+                    <option value="yes">Yes, I Agree</option>
+                    <option value="no">No, I Disagree</option>
+                  </select>
+                </div>
+              </th>
+            </tr>
+
+            <tr>
+              <th style="text-align: left">
+                Do you believe Bangladeshi Web Developer Will rise around and
+                Make a Good Impact?
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <div class="answer">
+                  <select name="options" id="options">
+                    <option value="yes">Yes, I Agree</option>
+                    <option value="no">No, I Disagree</option>
+                  </select>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <th style="text-align: left">
+                Do you believe Bangladesh recover from poverty, corruption soon?
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <div class="answer">
+                  <select name="options" id="options">
+                    <option value="yes">Yes, I Agree</option>
+                    <option value="no">No, I Disagree</option>
+                  </select>
+                </div>
+              </th>
+            </tr>
+          </table>
         </div>
       </div>
+
       <!--Recent News-->
-      <div class="section">
+      <div class="section recent_news">
         <h2>Recent News</h2>
         <p class="csub-title" style="margin: 30px 0">
           Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing
@@ -213,7 +267,7 @@
             <button>Read More</button>
           </div>
         </div>
-        <div class="card news-card">
+        <div class="card news-card news_card_odd">
           <div class="news-content">
             <h3>A year of contrasts in Bangladesh cricket</h3>
             <img src="./assets/al-jazeera.png" alt="news" />
@@ -246,6 +300,7 @@
           </div>
         </div>
       </div>
+
       <!--Donate-->
       <div class="section donate">
         <h2>Donate Today</h2>
@@ -299,6 +354,5 @@
         <a href=""><i class="fab fa-twitter"></i></a>
       </div>
     </footer>
-  </div>
   </body>
 </html>
