@@ -102,7 +102,7 @@ main h2 {
 .container {
   display: grid;
   justify-content: space-between;
-  grid-template-columns: repeat(4, 1fr);
+
   margin-top: 30px;
   gap: 24px;
 }
@@ -115,8 +115,8 @@ main h2 {
 }
 
 /* Pillars Section */
-.pillars .card {
-  max-width: 250px;
+.pillars {
+  grid-template-columns: repeat(4, 1fr);
 }
 .pillars .card img {
   width: 64px;
@@ -149,17 +149,17 @@ main h2 {
   background-color: #ffffff;
   color: #1e1e1e;
 }
-.table_desktop {
-  display: block;
-}
+
 .table_mobile {
   display: none;
 }
 /* Future Section */
+.future {
+  grid-template-columns: repeat(3, 1fr);
+}
 .future .card {
   border: 0;
   padding: 30px;
-  max-width: 330px;
 }
 
 .left-card {
@@ -435,6 +435,33 @@ hr {
 }
 .social-media a:hover i {
   color: #ffffff;
+}
+/* ----Tablet Friendly--- */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  header {
+    margin: 0 20px;
+  }
+  header section {
+    flex-direction: column-reverse;
+  }
+  header img {
+    width: 500px;
+  }
+  main {
+    margin: 0 20px;
+  }
+  .pillars {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .donate-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .news-card {
+    flex-direction: column;
+  }
+  .recent_news div:nth-child(4) {
+    flex-direction: column-reverse;
+  }
 }
 /* ----Mobile Friendly--- */
 @media screen and (max-width: 600px) {
